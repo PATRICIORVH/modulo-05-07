@@ -3,7 +3,6 @@
 Este repositorio es para el ejercicio práctico de normalización de una tabla de matrículas.  
 Partí con una tabla “plana” y la fui llevando a 1FN, 2FN y 3FN usando PostgreSQL.
 
----
 
 ## 0. Creación de la base y tabla inicial
 
@@ -14,7 +13,6 @@ En esta tabla los cursos, nombres de curso e instructores vienen como listas sep
 
 ![SQL tabla inicial](img/0.2-sql-inicial.png)
 
----
 
 ## 1. Paso 1 – Primera Forma Normal (1FN)
 
@@ -31,7 +29,6 @@ En 1FN ya no hay listas dentro de una celda; cada columna tiene un solo valor.
 
 ![Detalle 1FN](img/2.2-primera-forma-normal.png)
 
----
 
 ## 2. Paso 2 – Segunda Forma Normal (2FN)
 
@@ -49,7 +46,6 @@ En este punto los datos del alumno dependen de `student_id` y los del curso depe
 
 ![Detalle 2FN](img/3.3-segunda-forma-normal.png)
 
----
 
 ## 3. Paso 3 – Tercera Forma Normal (3FN)
 
@@ -65,7 +61,7 @@ Luego dejé `courses` con una FK a `instructors` usando `instr_name`.
 
 Así evito que la oficina del instructor dependa indirectamente del curso.
 
----
+
 ## 4. Consultas de comprobación
 
 Al final agregué consultas para revisar que todo quedó bien en 3FN.
