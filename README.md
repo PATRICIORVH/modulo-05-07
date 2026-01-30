@@ -1,10 +1,10 @@
 # Normalización 1FN – 2FN – 3FN en PostgreSQL
 
-Este repositorio es para el ejercicio práctico de normalización de una tabla de matrículas.  
-Partí con una tabla “plana” y la fui llevando a 1FN, 2FN y 3FN usando PostgreSQL.
+Ejercicio práctico de normalización de una tabla de matrículas.  
+Partí con una tabla plana y la fui llevando a 1FN, 2FN y 3FN usando PostgreSQL.
 
 
-## 0. Creación de la base y tabla inicial
+## Creación de la base y tabla inicial
 
 Primero creé la base de datos y la tabla `enrollments_raw` con los datos desnormalizados.  
 En esta tabla los cursos, nombres de curso e instructores vienen como listas separadas por `|`.
@@ -94,7 +94,7 @@ ORDER BY s.student_name, c.course_id;
 
 ## Autor
 
-Patricio Valenzuela
+Patricio Valenzuela Henriquez
 
 ## Repositorio GitHub
 
